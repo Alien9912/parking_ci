@@ -3,6 +3,9 @@ from app import create_app
 from app.models import db as _db
 from app.models import Client, Parking
 
+def pytest_configure(config):
+    config.addinivalue_line("markers", "parking: test for parking enter/exit")
+
 @pytest.fixture
 def app():
     app = create_app()
