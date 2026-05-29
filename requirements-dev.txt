@@ -1,0 +1,7 @@
+﻿pytest
+black
+isort
+factory-boy
+Faker
+Flask
+Flask-SQLAlchemy
